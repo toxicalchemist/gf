@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Indie+Flower&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffe6f0;
+  color: #d63384;
+  overflow-x: hidden;
+  line-height: 1.6;
+  padding-bottom: 100px;
+}
+
+.container {
+  text-align: center;
+  padding: 100px 20px 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.letter {
+  font-family: 'Indie Flower', cursive;
+  background: repeating-linear-gradient(#fffaf5, #fffaf5 24px, #ffe6eb 25px);
+  color: #4d2c2c;
+  border: 2px dashed #ffb6c1;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px rgba(255, 182, 193, 0.2);
+  font-size: 1.2rem;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.letter .signature {
+  text-align: right;
+  margin-top: 30px;
+  font-size: 1.3rem;
+  font-family: 'Pacifico', cursive;
+}
+
+button {
+  background-color: #ff80b3;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff4d94;
+}
+
+#surprise {
+  margin-top: 30px;
+  animation: fadeIn 1s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+#surprise img {
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animated hearts canvas */
+canvas#hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.letter-photo {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
